@@ -43,10 +43,10 @@ class User extends Authenticatable
     ];
 
     public function items() {
-        return $this->hasMany(Item::class);
+        return $this->hasMany(item::class);
     }
 
     public function categories() {
-        return $this->hasMany(Category::class);
+        return $this->hasMany(category::class);
     }
 }
